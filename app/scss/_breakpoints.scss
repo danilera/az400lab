@@ -1,0 +1,33 @@
+$sm:  899;
+$md:  900;
+$lg:  1024;
+
+@mixin brkp-sm(){
+   @media screen and (max-width: #{$sm}px) {
+     @content
+   }
+}
+
+@mixin brkp-md(){
+   @media screen and (min-width: #{$md}px) and (max-width: #{$lg - 1}px) {
+     @content
+   }
+}
+
+@mixin brkp-lg(){
+   @media screen and (min-width: #{$lg}px) {
+     @content
+   }
+}
+
+@mixin brkp-from($w) {
+  @media screen and (min-width: #{$w}px) {
+    @content
+  }
+}
+
+@mixin brkp-until($w) {
+  @media screen and (max-width: #{$w}px) {
+    @content
+  }
+}

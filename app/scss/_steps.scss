@@ -1,0 +1,55 @@
+.steps {
+  display: block;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 400px;
+  text-align: center;
+
+  ul, form {
+    width: 85%;
+    display: block;
+    margin: 0 auto
+  }
+
+  li {
+    margin-bottom: 30px
+  }
+}
+
+.steps__heading {
+  font-size: 18px;
+
+  h4 {
+    // font-size: 21px;
+    // font-weight: 700;
+    // color: $clear-blue
+
+    margin-bottom: 20px
+  }
+}
+
+.steps__form {
+  text-align: left;
+
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px
+  }
+
+  select {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: $clear-blue;
+    border: 1px solid $clear-blue;
+    border-radius: 5px
+  }
+
+
+  .disabled {
+    opacity: .25
+  }
+}

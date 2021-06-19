@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  app-prod:
+    container_name: poc
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # environment:
+    #   - REACT_APP_WSO2_URL=https://wso2apim-gateway-hml.ftd.com.br
+    #   - REACT_APP_IONICA_URL=https://souionicahml.com
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/app:rw
+      - /var/www/app/node_modules
